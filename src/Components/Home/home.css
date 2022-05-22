@@ -1,0 +1,50 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  /* width: 1000vw; */
+  height: 100%;
+  margin-top: 10%;
+  margin-bottom: 15%;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h5 {
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+.media {
+  display: flex;
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+.media a {
+  cursor: pointer;
+}
+
+.media .content {
+  font-size: 4rem;
+  cursor: pointer;
+}
+
+.arrowUp {
+  color: purple;
+  position: fixed;
+  right: 3rem;
+  bottom: 3rem;
+}
+
+@media only screen and (max-width: 800px) {
+  h2 {
+    text-align: center;
+    margin: 0 2rem;
+  }
+}

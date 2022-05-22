@@ -11,8 +11,18 @@
   font-size: 4.5rem;
   text-shadow: 4px 4px 5px rgb(13, 141, 245);
 }
+.navIcons {
+  display: none;
+}
 
 .links a {
+  color: rgb(13, 141, 245);
+  margin-right: 3rem;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.noLinks a {
   color: rgb(13, 141, 245);
   margin-right: 3rem;
   text-decoration: none;
@@ -26,21 +36,37 @@
   width: 100%;
 }
 
-.navIcons {
-  display: none;
-}
-
-@media only screen and (max-width: 800px) {
-  .links {
-    margin-right: 0.2rem;
-  }
-}
-
 @media only screen and (max-width: 600px) {
   .links {
     display: none;
   }
   .navIcons {
     display: contents;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .links {
+    display: none;
+  }
+  .navIcons {
+    display: block;
+  }
+
+  .noLinks {
+    transition: 5s ease-in 5s;
+    display: flex;
+    flex-direction: column;
+    background: rgb(15, 15, 15);
+    width: 100%;
+    position: absolute;
+    /* right: 10px; */
+    top: 60px;
+
+    text-align: center;
+    cursor: pointer;
+  }
+  .noLinks a {
+    margin: 1rem 3rem;
   }
 }

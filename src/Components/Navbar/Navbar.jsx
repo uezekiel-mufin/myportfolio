@@ -1,4 +1,4 @@
-import { AppBar, IconButton, Toolbar, Typography } from "@material-ui/core";
+import { AppBar, IconButton, Toolbar } from "@material-ui/core";
 import React, { useState } from "react";
 import "./navbar.css";
 import { Link } from "react-router-dom";
@@ -6,7 +6,9 @@ import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 
 const Navbar = () => {
-  const [clicked, setClicked] = useState(true);
+  const [isOpen, setOpen] = useState(false);
+  const [links, setLinks] = useState(true);
+  console.log(isOpen);
   return (
     <>
       <AppBar>
@@ -15,9 +17,26 @@ const Navbar = () => {
             <h2>EU.</h2>
 
             <div className='navIcons'>
-              {clicked ? <MenuIcon /> : <CloseIcon />}
+              {isOpen ? (
+                <CloseIcon
+                  style={{ fontSize: "3rem" }}
+                  onClick={() => {
+                    setOpen(!isOpen);
+                    setLinks(!links);
+                  }}
+                />
+              ) : (
+                <MenuIcon
+                  style={{ fontSize: "3rem" }}
+                  onClick={() => {
+                    setOpen(!isOpen);
+                    setLinks(!links);
+                  }}
+                />
+              )}
             </div>
-            <div className='links'>
+
+            <div className={links ? "links" : "noLinks"}>
               <Link to='/'>Home</Link>
               <Link to='/about'>About</Link>
               <Link to='/portfolio'>Portfolio</Link>

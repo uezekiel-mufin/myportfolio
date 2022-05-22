@@ -5,13 +5,13 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 const data = [
   {
-    icon: <MarkunreadIcon style={{ color: "blue", fontSize: "3rem" }} />,
+    icon: <MarkunreadIcon style={{ fontSize: "3rem" }} />,
     name: "EMAIL",
     address: "geniuswealthb@gmail.com",
     link: "mailto:geniuswealthb@gmail.com",
   },
   {
-    icon: <WhatsAppIcon style={{ color: "blue", fontSize: "3rem" }} />,
+    icon: <WhatsAppIcon style={{ color: "green", fontSize: "3rem" }} />,
     name: "WhatsApp",
     address: "+2348147576669",
     link: "https://web.whatsapp.com/send?phone?+2347016966965",

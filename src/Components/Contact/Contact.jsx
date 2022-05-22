@@ -90,6 +90,7 @@ const Contact = () => {
           >
             <>
               <TextField
+                color='info'
                 fullWidth
                 id='fullName'
                 label='fullName'

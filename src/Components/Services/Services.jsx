@@ -31,7 +31,7 @@ const Services = () => {
           fontWeight: 700,
         }}
       >
-        What can i do for you
+        What I can do for you
       </h3>
       <h3
         style={{
@@ -60,7 +60,7 @@ const Services = () => {
                 background: "rgba(0,0,0,0.4)",
                 margin: "1rem",
                 rowGap: "2rem",
-                padding: "1rem",
+                // padding: "1rem",
                 borderRadius: "2rem",
               }}
             >

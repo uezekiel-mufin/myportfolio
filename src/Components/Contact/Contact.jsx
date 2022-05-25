@@ -66,7 +66,8 @@ const Contact = () => {
             marginBottom: 0,
             marginTop: 0,
             color: "#EDD9FC",
-            fontSize: "2rem",
+            fontSize: "14px",
+            fontFamily: "regular",
           }}
         >
           I'm always open to discussing web development and programming in
@@ -152,7 +153,7 @@ const Contact = () => {
                 focused
                 color='secondary'
                 margin='normal'
-                style={{ borderColor: "white", marginTop: "0px" }}
+                style={{ color: "white", marginTop: "0px" }}
                 type='text'
                 fullWidth
                 rows={7}

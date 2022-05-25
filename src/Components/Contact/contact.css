@@ -31,6 +31,9 @@
   border-radius: 2rem;
 }
 
+input {
+  color: white;
+}
 .social__media .details {
   font-size: 2rem;
 }

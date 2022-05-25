@@ -31,7 +31,7 @@
   border-radius: 2rem;
 }
 
-input {
+.MuiTextField-root {
   color: white;
 }
 .social__media .details {

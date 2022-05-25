@@ -67,7 +67,7 @@ const Contact = () => {
             marginTop: 0,
             color: "#EDD9FC",
             fontSize: "14px",
-            fontFamily: "regular",
+            fontWeight: 100,
           }}
         >
           I'm always open to discussing web development and programming in
@@ -117,9 +117,6 @@ const Contact = () => {
                   required: "Full Name is required",
                   minLength: 2,
                 })}
-                // InputProps={{
-                //   className: classes.input,
-                // }}
               />
             </>
             <>

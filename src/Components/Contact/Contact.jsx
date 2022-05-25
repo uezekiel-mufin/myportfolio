@@ -5,6 +5,7 @@ import data from "./data";
 import { useForm } from "react-hook-form";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
+import { StyledEngineProvider } from "@mui/material/styles";
 
 const Contact = () => {
   const {
@@ -107,7 +108,7 @@ const Contact = () => {
             ref={form}
             onSubmit={(handleSubmit(regForm), sendEmail)}
           >
-            <>
+            <StyledEngineProvider injectFirst style={{ color: "white" }}>
               <InputLabel
                 htmlFor='fullName'
                 style={{
@@ -121,8 +122,8 @@ const Contact = () => {
                 margin='normal'
                 type='text'
                 focused
-                color='secondary'
-                style={{
+                // color='secondary'
+                sx={{
                   borderColor: "white",
                   marginTop: "0px",
                   backgroundColor: "#c8d1e3",
@@ -134,13 +135,13 @@ const Contact = () => {
                   minLength: 2,
                 })}
               />
-            </>
+            </StyledEngineProvider>
             <>
               <InputLabel htmlFor='email' style={{ color: "white" }}>
                 Email
               </InputLabel>
               <TextField
-                color='secondary'
+                // color='secondary'
                 focused
                 margin='normal'
                 style={{
@@ -168,12 +169,14 @@ const Contact = () => {
               </InputLabel>
               <TextField
                 focused
-                color='secondary'
+                // color='secondary'
                 margin='normal'
                 style={{
                   color: "white",
                   marginTop: "0px",
                   backgroundColor: "#c8d1e3",
+                  fontWeight: 300,
+                  fontSize: "16px",
                 }}
                 type='text'
                 fullWidth
@@ -193,7 +196,7 @@ const Contact = () => {
               variant='contained'
               className='btn'
               type='submit'
-              color='secondary'
+              // color='secondary'
               style={{ marginBottom: "3rem", fontSize: "2rem" }}
             >
               Submit

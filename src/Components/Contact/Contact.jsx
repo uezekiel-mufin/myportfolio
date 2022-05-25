@@ -122,7 +122,11 @@ const Contact = () => {
                 type='text'
                 focused
                 color='secondary'
-                style={{ borderColor: "white", marginTop: "0px" }}
+                style={{
+                  borderColor: "white",
+                  marginTop: "0px",
+                  backgroundColor: "#c8d1e3",
+                }}
                 fullWidth
                 id='fullName'
                 {...register("fullName", {
@@ -139,7 +143,11 @@ const Contact = () => {
                 color='secondary'
                 focused
                 margin='normal'
-                style={{ borderColor: "white", marginTop: "0px" }}
+                style={{
+                  borderColor: "white",
+                  marginTop: "0px",
+                  backgroundColor: "#c8d1e3",
+                }}
                 type='text'
                 fullWidth
                 id='email'
@@ -162,7 +170,11 @@ const Contact = () => {
                 focused
                 color='secondary'
                 margin='normal'
-                style={{ color: "white", marginTop: "0px" }}
+                style={{
+                  color: "white",
+                  marginTop: "0px",
+                  backgroundColor: "#c8d1e3",
+                }}
                 type='text'
                 fullWidth
                 rows={7}

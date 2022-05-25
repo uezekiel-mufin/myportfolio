@@ -35,7 +35,7 @@ const Home = () => {
       <Link to='/contact'>
         <Button
           size='large'
-          variant='outlined'
+          variant='contained'
           color='secondary'
           style={{ marginTop: "2rem" }}
         >

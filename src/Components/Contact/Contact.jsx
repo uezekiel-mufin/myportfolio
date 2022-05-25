@@ -61,7 +61,14 @@ const Contact = () => {
         >
           I would love to hear from you
         </h3>
-        <h3 style={{ marginBottom: 0, marginTop: 0 }}>
+        <h3
+          style={{
+            marginBottom: 0,
+            marginTop: 0,
+            color: "#EDD9FC",
+            fontSize: "2rem",
+          }}
+        >
           I'm always open to discussing web development and programming in
           general.
         </h3>
@@ -88,7 +95,13 @@ const Contact = () => {
             onSubmit={(handleSubmit(regForm), sendEmail)}
           >
             <>
-              <InputLabel htmlFor='fullName' style={{ color: "white" }}>
+              <InputLabel
+                htmlFor='fullName'
+                style={{
+                  color: "white",
+                  marginTop: 0,
+                }}
+              >
                 FullName
               </InputLabel>
               <TextField
@@ -96,6 +109,7 @@ const Contact = () => {
                 type='text'
                 focused
                 color='secondary'
+                style={{ borderColor: "white", marginTop: "0px" }}
                 fullWidth
                 id='fullName'
                 {...register("fullName", {
@@ -115,7 +129,7 @@ const Contact = () => {
                 color='secondary'
                 focused
                 margin='normal'
-                style={{ borderColor: "white" }}
+                style={{ borderColor: "white", marginTop: "0px" }}
                 type='text'
                 fullWidth
                 id='email'
@@ -138,7 +152,7 @@ const Contact = () => {
                 focused
                 color='secondary'
                 margin='normal'
-                style={{ borderColor: "white" }}
+                style={{ borderColor: "white", marginTop: "0px" }}
                 type='text'
                 fullWidth
                 rows={7}
@@ -157,6 +171,8 @@ const Contact = () => {
               variant='contained'
               className='btn'
               type='submit'
+              color='secondary'
+              style={{ marginBottom: "3rem", fontSize: "2rem" }}
             >
               Submit
             </Button>

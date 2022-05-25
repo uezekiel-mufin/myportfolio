@@ -31,16 +31,7 @@ const Navbar = () => {
               )}
             </div>
 
-            <motion.div
-              // transition={{ duration: 2 }}
-              // initial={{ y: -500 }}
-              // animate={{ y: 0 }}
-              className={links ? "links" : "noLinks"}
-              // onClick={() => {
-              //   setLinks(true);
-              //   setOpen(!isOpen);
-              // }}
-            >
+            <motion.div className={links ? "links" : "noLinks"}>
               <Link
                 to='/'
                 onClick={() => {

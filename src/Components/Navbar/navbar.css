@@ -24,9 +24,9 @@
 
 .noLinks a {
   color: rgb(13, 141, 245);
-  margin-right: 3rem;
   text-decoration: none;
   font-size: 2rem;
+  margin: 4rem 0;
 }
 
 .toolbar {
@@ -57,6 +57,7 @@
     transition: all 0.5s ease-in-out;
     display: flex;
     flex-direction: column;
+    row-gap: 2rem;
     align-items: center;
     background: rgb(15, 15, 15);
     width: 100%;
@@ -67,6 +68,7 @@
     animation-duration: 2s;
     animation-name: slidein;
     border-radius: 2rem;
+    padding: 3rem;
   }
 
   @keyframes slidein {

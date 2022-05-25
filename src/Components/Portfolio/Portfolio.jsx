@@ -37,17 +37,31 @@ const Portfolio = () => {
               <h3>{dat.description}</h3>
               <div className='btn'>
                 <Button
-                  variant='outlined'
-                  color='secondary'
-                  style={{ marginRight: "1.5rem" }}
+                  size='large'
+                  variant='contained'
+                  color='primary'
+                  style={{
+                    marginRight: "1.5rem",
+                    // backgroundColor: "white",
+                  }}
                 >
-                  <a href={dat.gitHub} target='_blank' rel='noreferrer'>
+                  <a
+                    href={dat.gitHub}
+                    target='_blank'
+                    rel='noreferrer'
+                    style={{ color: "white", fontSize: "1.5rem" }}
+                  >
                     GitHub
                   </a>
                 </Button>
 
                 <Button variant='contained' color='primary'>
-                  <a href={dat.liveDemo} target='_blank' rel='noreferrer'>
+                  <a
+                    href={dat.liveDemo}
+                    target='_blank'
+                    rel='noreferrer'
+                    style={{ color: "white", fontSize: "1.5rem" }}
+                  >
                     LiveDemo
                   </a>
                 </Button>

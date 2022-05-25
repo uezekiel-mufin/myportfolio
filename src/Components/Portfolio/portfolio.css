@@ -59,6 +59,10 @@ h2 {
   border-radius: 2rem;
 }
 
+.MuiButton-containedPrimary {
+  background-color: white;
+}
+
 .btn {
   display: flex;
   justify-content: space-evenly;

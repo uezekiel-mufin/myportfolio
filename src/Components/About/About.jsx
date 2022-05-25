@@ -1,12 +1,12 @@
-import { Box, Button, Grid, Typography } from "@material-ui/core";
+import { Box, Button, Grid } from "@material-ui/core";
 import React from "react";
 import "./about.css";
-import Suits from "../../assests/suits.jpg";
+
 import Suit from "../../assests/headphonepic.jpg";
 import { motion } from "framer-motion";
 import CV from "../../assests/Ezekiel_Udiomuno_CV.pdf";
 import { Link } from "react-router-dom";
-import { SubtitlesOffTwoTone } from "@mui/icons-material";
+
 const About = () => {
   return (
     <>

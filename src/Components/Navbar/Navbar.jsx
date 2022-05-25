@@ -4,6 +4,7 @@ import "./navbar.css";
 import { Link } from "react-router-dom";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
   const [isOpen, setOpen] = useState(false);
@@ -16,33 +17,81 @@ const Navbar = () => {
           <div className='toolbar'>
             <h2>EU.</h2>
 
-            <div className='navIcons'>
+            <div
+              className='navIcons'
+              onClick={() => {
+                setOpen(!isOpen);
+                setLinks(!links);
+              }}
+            >
               {isOpen ? (
-                <CloseIcon
-                  style={{ fontSize: "3rem" }}
-                  onClick={() => {
-                    setOpen(!isOpen);
-                    setLinks(!links);
-                  }}
-                />
+                <CloseIcon style={{ fontSize: "3rem" }} />
               ) : (
-                <MenuIcon
-                  style={{ fontSize: "3rem" }}
-                  onClick={() => {
-                    setOpen(!isOpen);
-                    setLinks(!links);
-                  }}
-                />
+                <MenuIcon style={{ fontSize: "3rem" }} />
               )}
             </div>
 
-            <div className={links ? "links" : "noLinks"}>
-              <Link to='/'>Home</Link>
-              <Link to='/about'>About</Link>
-              <Link to='/portfolio'>Portfolio</Link>
-              <Link to='/services'>Services</Link>
-              <Link to='/contact'>Contact</Link>
-            </div>
+            <motion.div
+              // transition={{ duration: 2 }}
+              // initial={{ y: -500 }}
+              // animate={{ y: 0 }}
+              className={links ? "links" : "noLinks"}
+              // onClick={() => {
+              //   setLinks(true);
+              //   setOpen(!isOpen);
+              // }}
+            >
+              <Link
+                to='/'
+                onClick={() => {
+                  setLinks(true);
+                  setOpen(!isOpen);
+                }}
+                style={{ width: "max-content" }}
+              >
+                Home
+              </Link>
+              <Link
+                style={{ width: "max-content" }}
+                to='/about'
+                onClick={() => {
+                  setLinks(true);
+                  setOpen(!isOpen);
+                }}
+              >
+                About
+              </Link>
+              <Link
+                style={{ width: "max-content" }}
+                to='/portfolio'
+                onClick={() => {
+                  setLinks(true);
+                  setOpen(!isOpen);
+                }}
+              >
+                Portfolio
+              </Link>
+              <Link
+                style={{ width: "max-content" }}
+                to='/services'
+                onClick={() => {
+                  setLinks(true);
+                  setOpen(!isOpen);
+                }}
+              >
+                Services
+              </Link>
+              <Link
+                style={{ width: "max-content" }}
+                to='/contact'
+                onClick={() => {
+                  setLinks(true);
+                  setOpen(!isOpen);
+                }}
+              >
+                Contact
+              </Link>
+            </motion.div>
           </div>
         </Toolbar>
       </AppBar>

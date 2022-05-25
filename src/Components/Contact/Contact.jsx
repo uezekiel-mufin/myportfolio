@@ -1,4 +1,4 @@
-import { TextField, Button } from "@mui/material";
+import { TextField, Button, Input, InputLabel } from "@mui/material";
 import React, { useState, useRef } from "react";
 import "./contact.css";
 import data from "./data";
@@ -53,7 +53,6 @@ const Contact = () => {
         </h3>
         <h3
           style={{
-            color: "",
             fontSize: "2rem",
             color: "blueviolet",
             marginBottom: 0,
@@ -62,7 +61,7 @@ const Contact = () => {
         >
           I would love to hear from you
         </h3>
-        <h3 style={{ color: "", marginBottom: 0, marginTop: 0 }}>
+        <h3 style={{ marginBottom: 0, marginTop: 0 }}>
           I'm always open to discussing web development and programming in
           general.
         </h3>
@@ -89,22 +88,37 @@ const Contact = () => {
             onSubmit={(handleSubmit(regForm), sendEmail)}
           >
             <>
+              <InputLabel htmlFor='fullName' style={{ color: "white" }}>
+                FullName
+              </InputLabel>
               <TextField
-                color='info'
+                margin='normal'
+                type='text'
+                focused
+                color='secondary'
                 fullWidth
                 id='fullName'
-                label='fullName'
                 {...register("fullName", {
                   required: "Full Name is required",
                   minLength: 2,
                 })}
+                // InputProps={{
+                //   className: classes.input,
+                // }}
               />
             </>
             <>
+              <InputLabel htmlFor='email' style={{ color: "white" }}>
+                Email
+              </InputLabel>
               <TextField
+                color='secondary'
+                focused
+                margin='normal'
+                style={{ borderColor: "white" }}
+                type='text'
                 fullWidth
                 id='email'
-                label='email'
                 {...register("Email", {
                   required: "Email is required",
                   pattern: {
@@ -117,11 +131,18 @@ const Contact = () => {
             </>
 
             <>
+              <InputLabel htmlFor='message' style={{ color: "white" }}>
+                Message
+              </InputLabel>
               <TextField
+                focused
+                color='secondary'
+                margin='normal'
+                style={{ borderColor: "white" }}
+                type='text'
                 fullWidth
                 rows={7}
                 id='message'
-                label='message'
                 multiline
                 {...register("message", {
                   required: "Please input your message",

@@ -5,8 +5,9 @@
 }
 .about h4 {
   text-align: center;
-  color: darkblue;
+  color: rgb(124, 124, 146);
   margin-top: 0.5rem;
+  text-shadow: 5px 5px 5px rgba(99, 61, 61, 0.5);
 }
 .about h6 {
   text-align: center;
@@ -27,7 +28,7 @@
 
 .about p {
   margin-right: 10rem;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 
 button.MuiButtonbase-root.MuiButton- span {

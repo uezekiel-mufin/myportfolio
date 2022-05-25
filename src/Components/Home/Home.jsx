@@ -1,11 +1,11 @@
-import { Divider, Box, Typography, Button } from "@material-ui/core";
+import { Button } from "@material-ui/core";
 import React from "react";
 import "./home.css";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import ArrowCircleUpIcon from "@mui/icons-material/ArrowCircleUp";
+
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { IconButton } from "@mui/material";
@@ -97,10 +97,6 @@ const Home = () => {
           </a>
         </IconButton>
       </motion.div>
-
-      <div className='arrowUp'>
-        <ArrowCircleUpIcon fontSize='large' style={{ fontWeight: "bold" }} />
-      </div>
     </motion.div>
   );
 };

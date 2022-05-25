@@ -28,7 +28,8 @@
 
 .about p {
   margin-right: 10rem;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
+  font-weight: 300;
 }
 
 button.MuiButtonbase-root.MuiButton- span {

@@ -20,7 +20,14 @@ const Portfolio = () => {
         <h3 style={{ fontSize: "2rem", marginTop: 0, marginBottom: "2px" }}>
           My Credentials
         </h3>
-        <h3 style={{ fontSize: "1.5rem", marginTop: 0, marginBottom: 0 }}>
+        <h3
+          style={{
+            fontSize: "14px",
+            fontWeight: 300,
+            marginTop: 0,
+            marginBottom: 0,
+          }}
+        >
           Here are detailed information about my credentials and my current and
           past work experience.
         </h3>
@@ -34,7 +41,7 @@ const Portfolio = () => {
             <div className='project__details'>
               <h1>{dat.name}</h1>
               <h2>{dat.technology}</h2>
-              <h3>{dat.description}</h3>
+              <h3 style={{ fontWeight: 300 }}>{dat.description}</h3>
               <div className='btn'>
                 <Button
                   size='large'
@@ -42,7 +49,6 @@ const Portfolio = () => {
                   color='primary'
                   style={{
                     marginRight: "1.5rem",
-                    // backgroundColor: "white",
                   }}
                 >
                   <a

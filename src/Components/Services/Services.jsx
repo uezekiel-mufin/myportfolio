@@ -18,14 +18,29 @@ const Services = () => {
           marginTop: "2rem",
           marginBottom: 0,
           color: "#0a72f0",
+          fontWeight: 700,
         }}
       >
         Services
       </h3>
-      <h3 style={{ fontSize: "3rem", marginTop: 0, marginBottom: 0 }}>
+      <h3
+        style={{
+          fontSize: "3rem",
+          marginTop: 0,
+          marginBottom: 0,
+          fontWeight: 700,
+        }}
+      >
         What can i do for you
       </h3>
-      <h3>Skills and offer</h3>
+      <h3
+        style={{
+          fontSize: "1.5rem",
+          marginTop: 0,
+        }}
+      >
+        Skills and offer
+      </h3>
 
       <div className='grid'>
         <Grid
@@ -55,14 +70,18 @@ const Services = () => {
               >
                 {service.image}
               </h3>
-              <h3 className='service__skill' style={{ marginTop: 0 }}>
+              <h3
+                className='service__skill'
+                style={{ marginTop: 0, fontWeight: 500, fontSize: "2rem" }}
+              >
                 {service.skill}
               </h3>
               <h3
                 style={{
-                  color: "#7e8082",
+                  color: "#EEEEEE",
                   marginRight: "3rem",
                   marginLeft: "3rem",
+                  fontSize: "14px",
                 }}
                 className='service__description'
               >

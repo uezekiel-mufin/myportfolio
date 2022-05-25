@@ -77,12 +77,24 @@ const Contact = () => {
           <div>
             {data.map((d, index) => (
               <div key={index} className='social__media'>
-                <div className='details' style={{ marginTop: "2rem" }}>
+                <div
+                  className='details'
+                  style={{ marginTop: "2rem", fontWeight: 700 }}
+                >
                   {d.icon}
                 </div>
                 <div className='details'>{d.name}</div>
                 <div className='details' style={{ marginBottom: "3rem" }}>
-                  <a href={d.link} target='_blank' rel='noreferrer'>
+                  <a
+                    href={d.link}
+                    target='_blank'
+                    rel='noreferrer'
+                    style={{
+                      fontWeight: 300,
+                      fontSize: "14px",
+                      color: "#EEEEEE",
+                    }}
+                  >
                     Send a message
                   </a>
                 </div>

@@ -61,7 +61,7 @@
     align-items: flex-start;
     /* background: rgb(15, 15, 15); */
     background: rgb(7, 7, 7);
-    width: 90%;
+    width: 200%;
     position: absolute;
     top: 60px;
     text-align: center;
@@ -70,6 +70,8 @@
     animation-name: fadeInOut;
     border-radius: 2rem;
     padding: 3rem;
+    left: 0;
+    right: 0;
   }
 
   @keyframes fadeInOut {

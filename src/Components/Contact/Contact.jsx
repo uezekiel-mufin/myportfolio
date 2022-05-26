@@ -13,23 +13,19 @@ const Contact = () => {
       color: "white",
     },
     "& input  ": {
-      color: "white",
+      color: "black",
       fontSize: "14px",
-      fontWeight: 100,
+      fontWeight: "bold",
     },
 
     "& hover label": {
       fontWeight: 700,
     },
-    "& .MuiOutlinedInput-root": {
-      fieldset: {
-        borderColor: "white",
-      },
-    },
+
     "& .MuiInputBase-inputMultiline": {
-      color: "white",
+      color: "black",
       fontSize: "14px",
-      fontWeight: 100,
+      fontWeight: "bold",
     },
   });
   const {
@@ -50,8 +46,6 @@ const Contact = () => {
     reset();
     setUserData(data);
   };
-  console.log(data);
-  console.log(userData);
 
   const form = useRef();
 
@@ -137,6 +131,7 @@ const Contact = () => {
               style={{
                 color: "white",
                 marginTop: 0,
+                fontSize: "1.5rem",
               }}
             >
               FullName
@@ -144,10 +139,11 @@ const Contact = () => {
             <StyledTextField
               margin='normal'
               type='text'
-              focused
               sx={{
                 borderColor: "white",
                 marginTop: "0px",
+                backgroundColor: "white",
+                border: "none",
               }}
               fullWidth
               id='fullName'
@@ -158,14 +154,18 @@ const Contact = () => {
             />
 
             <>
-              <InputLabel htmlFor='email' style={{ color: "white" }}>
+              <InputLabel
+                htmlFor='email'
+                style={{ color: "white", fontSize: "1.5rem" }}
+              >
                 Email
               </InputLabel>
               <StyledTextField
                 margin='normal'
-                focused
                 style={{
                   marginTop: "0px",
+                  backgroundColor: "white",
+                  border: "none",
                 }}
                 type='text'
                 fullWidth
@@ -182,17 +182,21 @@ const Contact = () => {
             </>
 
             <>
-              <InputLabel htmlFor='message' style={{ color: "white" }}>
+              <InputLabel
+                htmlFor='message'
+                style={{ color: "white", fontSize: "1.5rem" }}
+              >
                 Message
               </InputLabel>
               <StyledTextField
                 margin='normal'
-                focused
                 multiline
                 style={{
                   marginTop: "0px",
                   fontWeight: 300,
                   fontSize: "16px",
+                  backgroundColor: "white",
+                  bordeRadius: "1rem",
                 }}
                 type='text'
                 fullWidth
@@ -212,6 +216,7 @@ const Contact = () => {
 
             <Button
               size='large'
+              color='secondary'
               variant='contained'
               className='btn'
               type='submit'

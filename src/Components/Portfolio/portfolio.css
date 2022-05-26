@@ -18,9 +18,11 @@ img {
 }
 
 h5 {
-  color: #0a72f0;
+  color: #ffffff;
   margin-top: 0;
   text-align: center;
+  font-weight: 700;
+  font-size: 3rem;
 }
 h3 {
   text-align: center;
@@ -31,6 +33,7 @@ h1 {
 }
 h2 {
   margin-left: 0;
+  text-align: center;
 }
 
 .portfolio__contents {

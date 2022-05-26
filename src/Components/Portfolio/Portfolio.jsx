@@ -16,10 +16,7 @@ const Portfolio = () => {
       className='portfolio'
     >
       <div className='header'>
-        <h5>Resume</h5>
-        <h3 style={{ fontSize: "2rem", marginTop: 0, marginBottom: "2px" }}>
-          My Credentials
-        </h3>
+        <h5>Portfolio</h5>
         <h3
           style={{
             fontSize: "14px",

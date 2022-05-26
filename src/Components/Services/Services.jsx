@@ -14,7 +14,7 @@ const Services = () => {
     >
       <h3
         style={{
-          fontSize: "2rem",
+          fontSize: "3rem",
           marginTop: "2rem",
           marginBottom: 0,
           color: "#0a72f0",

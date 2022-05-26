@@ -1,3 +1,7 @@
+.MuiInputBase-root-MuiOutlinedInput-root input {
+  color: white;
+}
+
 .form {
   display: flex;
   flex-direction: column;
@@ -31,7 +35,7 @@
   margin-right: 2rem;
   margin-left: 25rem;
   /* background: rgba(0, 0, 0, 0.5); */
-  background: #150420;
+  background: #071741;
   border-radius: 2rem;
 }
 

@@ -5,9 +5,33 @@ import data from "./data";
 import { useForm } from "react-hook-form";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
-import { StyledEngineProvider } from "@mui/material/styles";
+import { StyledEngineProvider, styled } from "@mui/material/styles";
 
 const Contact = () => {
+  const StyledTextField = styled(TextField)({
+    "& label": {
+      color: "white",
+    },
+    "& input  ": {
+      color: "white",
+      fontSize: "14px",
+      fontWeight: 100,
+    },
+
+    "& hover label": {
+      fontWeight: 700,
+    },
+    "& .MuiOutlinedInput-root": {
+      fieldset: {
+        borderColor: "white",
+      },
+    },
+    "& .MuiInputBase-inputMultiline": {
+      color: "white",
+      fontSize: "14px",
+      fontWeight: 100,
+    },
+  });
   const {
     handleSubmit,
     register,
@@ -108,46 +132,40 @@ const Contact = () => {
             ref={form}
             onSubmit={(handleSubmit(regForm), sendEmail)}
           >
-            <StyledEngineProvider injectFirst style={{ color: "white" }}>
-              <InputLabel
-                htmlFor='fullName'
-                style={{
-                  color: "white",
-                  marginTop: 0,
-                }}
-              >
-                FullName
-              </InputLabel>
-              <TextField
-                margin='normal'
-                type='text'
-                focused
-                // color='secondary'
-                sx={{
-                  borderColor: "white",
-                  marginTop: "0px",
-                  backgroundColor: "#c8d1e3",
-                }}
-                fullWidth
-                id='fullName'
-                {...register("fullName", {
-                  required: "Full Name is required",
-                  minLength: 2,
-                })}
-              />
-            </StyledEngineProvider>
+            <InputLabel
+              htmlFor='fullName'
+              style={{
+                color: "white",
+                marginTop: 0,
+              }}
+            >
+              FullName
+            </InputLabel>
+            <StyledTextField
+              margin='normal'
+              type='text'
+              focused
+              sx={{
+                borderColor: "white",
+                marginTop: "0px",
+              }}
+              fullWidth
+              id='fullName'
+              {...register("fullName", {
+                required: "Full Name is required",
+                minLength: 2,
+              })}
+            />
+
             <>
               <InputLabel htmlFor='email' style={{ color: "white" }}>
                 Email
               </InputLabel>
-              <TextField
-                // color='secondary'
-                focused
+              <StyledTextField
                 margin='normal'
+                focused
                 style={{
-                  borderColor: "white",
                   marginTop: "0px",
-                  backgroundColor: "#c8d1e3",
                 }}
                 type='text'
                 fullWidth
@@ -167,14 +185,12 @@ const Contact = () => {
               <InputLabel htmlFor='message' style={{ color: "white" }}>
                 Message
               </InputLabel>
-              <TextField
-                focused
-                // color='secondary'
+              <StyledTextField
                 margin='normal'
+                focused
+                multiline
                 style={{
-                  color: "white",
                   marginTop: "0px",
-                  backgroundColor: "#c8d1e3",
                   fontWeight: 300,
                   fontSize: "16px",
                 }}
@@ -182,7 +198,9 @@ const Contact = () => {
                 fullWidth
                 rows={7}
                 id='message'
-                multiline
+                // rows={4}
+                // maxRows={6}
+                // multiline
                 {...register("message", {
                   required: "Please input your message",
                 })}
@@ -191,6 +209,7 @@ const Contact = () => {
                 <p className='error'>{errors.messages?.message}</p>
               )}
             </>
+
             <Button
               size='large'
               variant='contained'

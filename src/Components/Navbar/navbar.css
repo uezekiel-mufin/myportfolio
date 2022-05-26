@@ -58,32 +58,33 @@
     display: flex;
     flex-direction: column;
     row-gap: 2rem;
-    align-items: center;
-    background: rgb(15, 15, 15);
-    width: 100%;
+    align-items: flex-start;
+    /* background: rgb(15, 15, 15); */
+    background: rgb(7, 7, 7);
+    width: 90%;
     position: absolute;
     top: 60px;
     text-align: center;
     cursor: pointer;
-    animation-duration: 2s;
-    animation-name: slidein;
+    animation-duration: 0.5s;
+    animation-name: fadeInOut;
     border-radius: 2rem;
     padding: 3rem;
   }
 
-  @keyframes slidein {
+  @keyframes fadeInOut {
     from {
-      margin-bottom: 100%;
-      width: 200%;
+      margin-top: -5%;
+      width: 120%;
     }
 
     to {
-      margin-bottom: 0%;
-      width: 100%;
+      margin-bottom: 100%;
+      width: 120%;
     }
   }
 
   .noLinks a {
-    margin: 1rem 3rem;
+    margin: 1rem 0rem;
   }
 }

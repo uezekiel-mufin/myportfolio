@@ -142,7 +142,7 @@ const Contact = () => {
               sx={{
                 borderColor: "white",
                 marginTop: "0px",
-                backgroundColor: "white",
+                backgroundColor: "#BEBEBE",
                 border: "none",
               }}
               fullWidth
@@ -164,7 +164,7 @@ const Contact = () => {
                 margin='normal'
                 style={{
                   marginTop: "0px",
-                  backgroundColor: "white",
+                  backgroundColor: "#BEBEBE",
                   border: "none",
                 }}
                 type='text'
@@ -195,7 +195,7 @@ const Contact = () => {
                   marginTop: "0px",
                   fontWeight: 300,
                   fontSize: "16px",
-                  backgroundColor: "white",
+                  backgroundColor: "#BEBEBE",
                   bordeRadius: "1rem",
                 }}
                 type='text'

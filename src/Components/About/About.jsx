@@ -17,7 +17,7 @@ const About = () => {
         className='about'
       >
         <Box style={{ margin: "2rem", background: "rgba(0,0,0,0.5)" }}>
-          <h6>About</h6>
+          <h6 style={{ fontSize: "3rem" }}>About</h6>
           <h4>A brief intro about me</h4>
 
           <Grid container style={{ width: "100%" }} spacing={2}>

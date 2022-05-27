@@ -25,7 +25,7 @@ const Home = () => {
       >
         Hello,
       </motion.h5>
-      <h2 style={{ fontWeight: 700, fontSize: 50, fontStyle: "italic" }}>
+      <h2 className='my__name' style={{ fontWeight: 700, fontStyle: "italic" }}>
         I am Ezekiel Udiomuno
       </h2>
       <h2 style={{ display: "flex", color: "#13ed29" }}>

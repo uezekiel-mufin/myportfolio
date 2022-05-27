@@ -21,6 +21,10 @@ h5 {
   margin-bottom: 0;
 }
 
+.my__name {
+  font-size: 7rem;
+}
+
 .media {
   display: flex;
   gap: 1rem;

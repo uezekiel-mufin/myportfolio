@@ -1,28 +1,28 @@
-import img1 from "../../assests/ecommerce.jpg";
+import img1 from "../../assests/Hotel.png";
 import img2 from "../../assests/forkify.jpg";
 import img3 from "../../assests/bankist.jpg";
-import img4 from "../../assests/slider2.jpg";
-import img5 from "../../assests/tours.jpg";
-import img6 from "../../assests/stripejs.jpg";
+import img4 from "../../assests/dice.avif";
+import img5 from "../../assests/solar.avif";
+import img6 from "../../assests/admin_panel.avif";
 
 const data = [
   {
     image: img1,
-    name: "ECommerce",
-    technology: "JAVASCRIPT || REACTJS || ECOMMERCE ||MATERIAL-UI",
+    name: "Landing Page of HotelReddington",
+    technology: "JAVASCRIPT || REACTJS || TailwindCSS",
     description:
-      "Ezzy Commerce is an online store built on commercejs, where users can purchase goods locally and internationally",
-    gitHub: "https://github.com/Ezzywealth/Ecommerce-ezzy",
-    liveDemo: "https://commerce-ezzy.netlify.app/",
+      "This is a project to showcase the landing page of a hotel. It showcases all aspects of the hotel",
+    gitHub: "https://github.com/Ezzywealth/hotel",
+    liveDemo: "https://hotelred.netlify.app/",
   },
   {
     image: img2,
     name: "Forkify",
-    technology: "JAVASCRIPT ",
+    technology: "JAVASCRIPT || NextJS || TailwindCSS || React-Icons ",
     description:
       "Forkify is a web app where users can search for recipe and cooking methods for different types of food",
-    gitHub: "https://github.com/Ezzywealth/Forkify-Ezekiel",
-    liveDemo: "https://forkify-ezekiel.netlify.app/",
+    gitHub: "https://github.com/Ezzywealth/forkify-nextj",
+    liveDemo: "https://forkify-e2.netlify.app/",
   },
   {
     image: img3,
@@ -30,35 +30,36 @@ const data = [
     technology: "JAVASCRIPT || CSS || HTML",
     description:
       "Bankist is an online banking web application, which gives users a memorable experience in financial transactions",
-    gitHub: "https://github.com/Ezzywealth/Bankist-Ezekiel",
-    liveDemo: "https://bankist-site-ezekiel.netlify.app/",
+    gitHub: "https://github.com/Ezzywealth/newBankist",
+    liveDemo: "https://bankist-ezzy.netlify.app",
   },
   {
     image: img4,
-    name: "Slider",
+    name: "Piggy Dice Game",
     technology: "JAVASCRIPT || REACTJS ||MATERIAL-UI",
     description:
-      "A mini web application to show how to impliment the slider functionality in ReactJs",
-    gitHub: "https://github.com/Ezzywealth/slider-reactjs",
-    liveDemo: "https://slider-ezzy.netlify.app/",
+      "This game is just a mini web app showing how i manipulated the DOM element using REactJS",
+    gitHub: "https://github.com/Ezzywealth/pig-dice",
+    liveDemo: "https://piggyd.netlify.app/",
   },
   {
     image: img5,
-    name: "City-tour",
-    technology: "JAVASCRIPT || REACTJS || ECOMMERCE ||MATERIAL-UI",
+    name: "Solar-Lead",
+    technology: "JAVASCRIPT || CSS || REACTJS || MATERIAL-UI || Framer-Motion",
     description:
-      "City-tour is a web application that displays a list of beautiful cities and some details about them",
-    gitHub: "https://github.com/Ezzywealth/tours",
-    liveDemo: "https://ezzy-city-tours.netlify.app/",
+      "A simple website to showcase info about Solar Lead and their work as leading force in green energy",
+    gitHub: "https://github.com/Ezzywealth/solarlead",
+    liveDemo: "https://esolarlead.netlify.app/",
   },
   {
     image: img6,
-    name: "StripeHP",
-    technology: "JAVASCRIPT || REACTJS ||MATERIAL-UI",
+    name: "Stock Dashboard",
+    technology:
+      "JAVASCRIPT || REACTJS ||MATERIAL-UI || Recharts || React-router",
     description:
-      "StripeHP is a simple webpage that displays the homepage of stripe",
-    gitHub: "https://github.com/Ezzywealth/stripe-submenu-ezzy",
-    liveDemo: "https://ezzy-stripe.netlify.app/",
+      "This is an Admin panel page that showcases the administrative side of a web application",
+    gitHub: "https://github.com/Ezzywealth/adminPage",
+    liveDemo: "https://stodashboard.netlify.app/",
   },
 ];
 

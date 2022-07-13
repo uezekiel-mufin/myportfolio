@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import About from "./Components/About/About";
 import Home from "./Components/Home/Home";
 import Contact from "./Components/Contact/Contact";
@@ -9,8 +9,12 @@ import { Routes, Route } from "react-router-dom";
 import Particlejs from "./Components/Particlejs/Particlejs";
 import { AnimatePresence } from "framer-motion";
 import { useLocation } from "react-router-dom";
+// import BounceLoader from "react-spinners/BounceLoader";
+// import { css } from "@emotion/react";
+
 const App = () => {
   const location = useLocation();
+
   return (
     <>
       <Particlejs />
